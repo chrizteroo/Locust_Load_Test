@@ -89,4 +89,47 @@ wll use some of the methods for the test.
 Create a ne python file example regres.py
 
 NOTE SAME way app was created.
+Some Command Examples
 
+NOTES: Customized all commands based on my file folder 
+locust -f CommandLineSample/SampleTest.py -u 1 -r 1 -t 10s --headless --print-stats --csv Run1.csv --csv-full-history --host=https://marketplace.digital.gov.bc.ca
+
+Validate Response
+
+
+locust -f ValidateResponse/VerifyResponse.py
+
+
+
+Run Parameterization
+
+ locust -f DataParameterization/parameterization.py -u 2 -r 2 -t 10s --headless
+
+OR
+locust -f DataParameterization/parameterization.py -u 3 -r 1 -t 5s --only-summary --headless
+
+Correlation
+locust -f Correlation/petststore.py 
+
+Distributed Load testing
+Master Command
+locust -f DistributedLoadTesting/petstore.py 
+--master
+
+
+locust -f Correlation/petststore.py --master
+Then open another terminal
+
+locust -f Correlation/petststore.py —worker
+
+locust -f DistributedLoadTesting/petstore.py 
+—worker
+
+Another feature command
+
+locust -f Correlation/petststore.py --master —expect-worker
+
+
+Useful Resource Locust
+
+https://docs.locust.io/en/stable/configuration.html?
