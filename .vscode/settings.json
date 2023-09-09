@@ -1,0 +1,21 @@
+{
+    "cSpell.words": [
+        "custemail",
+        "custname",
+        "custtel",
+        "installedd",
+        "jsession",
+        "jsessionid",
+        "OLJCESPC",
+        "readtestdata",
+        "regres",
+        "signin",
+        "signoff",
+        "signon",
+        "SIQT",
+        "venv"
+    ],
+    "python.analysis.extraPaths": [
+        "./DataParameterization"
+    ]
+}
